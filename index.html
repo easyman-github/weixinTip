@@ -19,8 +19,11 @@
 			<img src="live_weixin.png" alt="微信打开"/>
 		</p>
 	</div>
+	<div>
+		<p>点击下载</p>
+	</div>
 	<script type="text/javascript">
-        $(window).on("load",function(){
+        	$(window).on("load",function(){
 	        var winHeight = $(window).height();
 			function is_weixin() {
 			    var ua = navigator.userAgent.toLowerCase();
@@ -33,9 +36,9 @@
 			var isWeixin = is_weixin();
 			if(isWeixin){
 				$(".weixin-tip").css("height",winHeight);
-	            $(".weixin-tip").show();
+				$(".weixin-tip").show();
 			}
-        })
+        	})
 	</script>
 </body>
 </html>
